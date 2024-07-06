@@ -3,6 +3,7 @@ import Menu from "./menu";
 import Image from "./image";
 import styles from './header.module.css';
 import logo from '../img/logo-cortin.png'
+import ReactLogo from "./reactLogo";
 
 class Header extends React.Component {
     constructor(props) {
@@ -12,7 +13,10 @@ class Header extends React.Component {
         return (
             <div className={styles.wrapper}>
                 <Image image={logo} className={styles.logo} />
-                <Menu />
+                <div className={styles.wrapper}>
+                    <Menu />
+                    <ReactLogo />
+                </div>
             </div>
         )
     }

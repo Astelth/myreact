@@ -1,0 +1,33 @@
+.wrapper {
+    display: block;
+    min-width: 32px;
+    transform: translate(-85vw, 93vh);
+}
+
+.appLogo {
+    max-height: 32px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .appLogo {
+        /*animation: App-logo-spin infinite 12s linear;*/
+        animation: App-logo-spin 3s linear 1s infinite alternate;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        transform: translate(0);
+    }
+}
