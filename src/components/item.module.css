@@ -1,0 +1,30 @@
+.arrowIcon {
+    color: #2B8CFC;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .item:nth-child(1) {
+        grid-area: b;
+    }
+
+    .item:nth-child(2) {
+        grid-area: c;
+    }
+
+    .item:nth-child(3) {
+        grid-area: d;
+    }
+
+    .item:nth-child(4) {
+        grid-area: e;
+    }
+
+    .item:nth-child(1) {
+        grid-area: f;
+    }
+
+    .image {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.item {
+    max-width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-areas:
+            "a b"
+            "c b"
+            "c d"
+            "e d"
+            "e f"
+            "g f"
+            "g h";
+        align-items: start;
+    }
+}
