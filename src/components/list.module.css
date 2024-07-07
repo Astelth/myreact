@@ -1,16 +1,20 @@
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.item {
-    max-width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    grid-template-areas:
+        "a a"
+        "b b"
+        "c d"
+        "e d"
+        "e f"
+        "g f";
 }
 
 @media screen and (min-width: 768px) {
     .wrapper {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 16px;
         grid-template-areas:
             "a b"
@@ -20,6 +24,7 @@
             "e f"
             "g f"
             "g h";
-        align-items: start;
+        padding: 48px 0;
+        justify-content: space-between;
     }
 }
