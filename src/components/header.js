@@ -2,13 +2,10 @@ import React from "react";
 import Menu from "./menu";
 import Image from "./image";
 import styles from './header.module.css';
-import logo from '../img/logo-cortin.png'
+import logo from '../images/logo-cortin.png'
 import ReactLogo from "./reactLogo";
 
 class Header extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div className={styles.wrapper}>

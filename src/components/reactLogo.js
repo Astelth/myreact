@@ -1,4 +1,4 @@
-import logo from '../img/logo-react.svg';
+import logo from '../images/logo-react.svg';
 import styles from './reactLogo.module.css';
 
 function ReactLogo() {
@@ -7,7 +7,6 @@ function ReactLogo() {
             <img src={logo} className={styles.appLogo} alt="logo" />
         </div>
     );
-  }
-  
-  export default ReactLogo;
-  
+}
+
+export default ReactLogo;

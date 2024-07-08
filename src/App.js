@@ -2,7 +2,7 @@ import Header from './components/header';
 import List from './components/list';
 import styles from './app.module.css';
 import React from 'react';
-
+import Subhead from './components/subhead';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,18 +11,6 @@ class App extends React.Component {
       list: [
         {
           id: 1,
-          title: 'ИНДИВИДУАЛЬНОЕ ИЗГОТОВЛЕНИЕ ШТОР',
-          text: '8 видов систем, более 1000 видов тканей, и множество дополнительных возможностей позволяют создать реально уникальную и уютную атмосферу в вашем доме',
-          subtitle: '',
-          description: '',
-          image: '',
-          image1: '',
-          image2: '',
-          image3: '',
-          image4: '',
-        },
-        {
-          id: 2,
           title: '',
           text: '',
           subtitle: 'римские шторы',
@@ -90,6 +78,8 @@ class App extends React.Component {
         <div className={styles.wrapper}>
           <Header />
           <List list={this.state.list} />
+          <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' titleClassName={styles.title}
+            text='С нами более 500 партнёров' textClassName='styles.text' />
         </div>
       </div>
     );

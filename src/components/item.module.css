@@ -84,33 +84,8 @@
         max-width: 520px;
     }
 
-    .item:nth-child(1) {
-        grid-area: a;
-        min-height: 350px;
-    }
-
-    .item:nth-child(2) {
-        grid-area: b;
-        min-height: 700px;
-    }
-
-    .item:nth-child(3) {
-        min-height: 700px;
-        grid-area: c;
-    }
-
-    .item:nth-child(4) {
-        min-height: 700px;
-        grid-area: d;
-    }
-
-    .item:nth-child(5) {
-        min-height: 700px;
-        grid-area: e;
-    }
-
-    .item:nth-child(6) {
-        grid-area: f;
+    .item {
+        align-self: center;
     }
 
     .item:nth-child(2) .content,

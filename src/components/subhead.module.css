@@ -1,19 +1,6 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 8px;
-    grid-template-areas:
-        "a a"
-        "b b"
-        "c e"
-        "d f"
-        "g h"
-        "i j"
-        "k l"
-        "m n";
-}
-.head {
-    grid-area: a;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -35,22 +22,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 16px;
-        grid-template-areas:
-            "a b"
-            "c b"
-            "c d"
-            "e d"
-            "e f"
-            "g f"
-            "g h";
-        padding: 48px 0;
-        justify-content: space-between;
-    }
-
     .title {
         font-size: 46px;
         text-align: left;
