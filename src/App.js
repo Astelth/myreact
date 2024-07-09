@@ -78,8 +78,8 @@ class App extends React.Component {
         <div className={styles.wrapper}>
           <Header />
           <List list={this.state.list} />
-          <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' titleClassName={styles.title}
-            text='С нами более 500 партнёров' textClassName='styles.text' />
+          <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' 
+            text='С нами более 500 партнёров' isCentered />
         </div>
       </div>
     );
