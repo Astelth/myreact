@@ -2,7 +2,8 @@ import Header from './components/header';
 import List from './components/list';
 import styles from './app.module.css';
 import React from 'react';
-import Subhead from './components/subhead';
+import Cooperation from './components/cooperation';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class App extends React.Component {
           text: '',
           subtitle: 'римские шторы',
           description: 'Изготавливаем римские шторы с учётом всех ваших пожеланий',
-          image: 'https://i.ibb.co/fNf4YQW/02image.jpg',
+          image: '/images/02image.jpg',
           image1: '',
           image2: '',
           image3: '',
@@ -27,7 +28,7 @@ class App extends React.Component {
           text: '',
           subtitle: 'австриийские шторы',
           description: 'Изготавливаем австриийские шторы с учётом всех ваших пожеланий',
-          image: 'https://i.ibb.co/V2SrPZb/03image.jpg',
+          image: '/images/03image.jpg',
           image1: '',
           image2: '',
           image3: '',
@@ -39,7 +40,7 @@ class App extends React.Component {
           text: '',
           subtitle: 'французские шторы',
           description: 'Изготавливаем французские шторы с учётом всех ваших пожеланий',
-          image: 'https://i.ibb.co/g6mfvyX/04image.jpg',
+          image: '/images/04image.jpg',
           image1: '',
           image2: '',
           image3: '',
@@ -51,7 +52,7 @@ class App extends React.Component {
           text: '',
           subtitle: 'лондонские шторы',
           description: 'Изготавливаем лондонские шторы с учётом всех ваших пожеланий',
-          image: 'https://i.ibb.co/mGndGn7/05image.jpg',
+          image: '/images/05image.jpg',
           image1: '',
           image2: '',
           image3: '',
@@ -63,23 +64,23 @@ class App extends React.Component {
           text: '',
           subtitle: 'прямые шторы',
           description: 'Изготавливаем прямые шторы с учётом всех ваших пожеланий',
-          image: 'https://i.ibb.co/1TjLPHG/06image.jpg',
+          image: '/images/06image.jpg',
           image1: '',
           image2: '',
           image3: '',
           image4: '',
         },
-      ]
+      ],
     }
   }
+
   render() {
     return (
       <div className={styles.app}>
         <div className={styles.wrapper}>
           <Header />
           <List list={this.state.list} />
-          <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' 
-            text='С нами более 500 партнёров' isCentered />
+          <Cooperation />
         </div>
       </div>
     );

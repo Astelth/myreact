@@ -3,6 +3,7 @@ import Image from "./image";
 import { FaArrowRightLong } from "react-icons/fa6";
 import styles from './item.module.css';
 import cn from 'classnames';
+import { address } from "./constants";
 
 class Item extends React.Component {
     item = this.props.item;
@@ -19,7 +20,7 @@ class Item extends React.Component {
                 </div>
                 <div className={styles.content}>
                     <div>
-                        <Image image={this.item.image} className={cn(styles.image, { [styles.no]: this.item.text })} />
+                        <Image image={address + this.item.image} className={cn(styles.image, { [styles.no]: this.item.text })} />
                     </div>
                     <div className={styles.subtitle}>
                         {this.item.subtitle}

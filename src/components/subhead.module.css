@@ -7,10 +7,10 @@
     color: #BBA390;
     font-size: 24px;
     line-height: 120%;
-    letter-spacing: 10%;
     font-family: "Futura PT", sans-serif;
-    text-align: center;
     text-transform: uppercase;
+    padding-top: 48px;
+    margin-bottom: 12px;
 }
 
 .text {
@@ -18,11 +18,22 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 20px;
-    text-align: center;
+    margin-bottom: 32px;
+}
+
+.note {
+    font-size: 14px;
+    line-height: 28px;
+    color: #5B82A9;
+    font-weight: 400;
 }
 
 .centered {
     text-align: center;
+}
+
+.grida {
+    grid-area: a;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,5 +50,16 @@
         line-height: 32px;
         text-align: left;
         margin-bottom: 96px;
+    }
+
+    .note {
+        font-size: 20px;
+        line-height: 28px;
+        color: #5B82A9;
+        font-weight: 400;
+    }
+
+    .centered {
+        text-align: center;
     }
 }
