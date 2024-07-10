@@ -2,7 +2,9 @@ import React from "react";
 import styles from './cooperation.module.css';
 import Subhead from "./subhead";
 import Image from "./image";
+import Input from "./input";
 import { address } from "./constants";
+import Button from "./button";
 
 class Cooperation extends React.Component {
 
@@ -10,7 +12,7 @@ class Cooperation extends React.Component {
 
         return (
             <div className={styles.wrapper}>
-                <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' isNote
+                <Subhead title='ПРЕДЛАГАЕМ УДОБНЫЕ УСЛОВИЯ ДЛЯ ДИЛЕРОВ' isNote isCentered
                     text='С нами более 500 партнёров' />
                 <div className={styles.list}>
                     <div className={styles.item}>
@@ -47,6 +49,10 @@ class Cooperation extends React.Component {
                             Собственные каталоги для каждого типа изделия
                         </div>
                     </div>
+                </div>
+                <div className={styles.footer} >
+                    <Input placeholder='Телефон' isMobile100 />
+                    <Button caption='Стать дилером' isMobile100 />
                 </div>
             </div>
         )

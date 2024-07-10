@@ -1,0 +1,25 @@
+.input,
+.mobile100 {
+    font-style: 12px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 300;
+    color: #5C82A8;
+    border: 1px solid #385980;
+    background-color: #12253B;
+    padding: 4px 8px;
+}
+
+.mobile100 {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        font-size: 16px;
+    }
+
+    .mobile100 {
+        width: inherit;
+    }
+}
