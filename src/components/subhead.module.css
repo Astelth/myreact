@@ -5,8 +5,9 @@
 
 .title {
     color: #BBA390;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 120%;
+    font-weight: 500;
     font-family: "Futura PT", sans-serif;
     text-transform: uppercase;
     padding-top: 48px;
@@ -34,6 +35,14 @@
 
 .grida {
     grid-area: a;
+}
+
+.none {
+    display: none;
+}
+
+.white {
+    color: #fff;
 }
 
 @media screen and (min-width: 768px) {

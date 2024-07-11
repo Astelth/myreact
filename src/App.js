@@ -3,7 +3,8 @@ import List from './components/list';
 import styles from './app.module.css';
 import React from 'react';
 import Cooperation from './components/cooperation';
-
+import Cards from './components/cards';
+import Block from './components/block';
 
 class App extends React.Component {
   constructor(props) {
@@ -81,6 +82,8 @@ class App extends React.Component {
           <Header />
           <List list={this.state.list} />
           <Cooperation />
+          <Cards />
+          <Block />
         </div>
       </div>
     );

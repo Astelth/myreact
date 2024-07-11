@@ -1,12 +1,12 @@
 import styles from './button.module.css';
 import React from 'react';
+import cn from 'classnames';
 
 class Button extends React.Component {
     render() {
-        const isMobile100Class = this.props.isMobile100 === true ? styles.mobile100 : styles.button;
         return (
-            <div className={styles.wrapper}>
-                <button className={isMobile100Class}>{this.props.caption}</button>
+            <div className={cn(styles.wrapper, { [styles.centered]: this.props.isCentered })}>
+                <button className={cn(styles.button, { [styles.mobile100]: this.props.isMobile100 })}>{this.props.caption}</button>
             </div>
         )
     }

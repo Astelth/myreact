@@ -9,10 +9,10 @@ class Subhead extends React.Component {
         const isNoteClass = this.props.isNote === true ? styles.note : '';
         return (
             <div className={cn(styles.wrapper, isGridAClass)}>
-                <div className={cn(styles.title, isCenteredClass)}>
+                <div className={cn(styles.title, isCenteredClass, { [styles.none]: !this.props.title }, { [styles.white]: this.props.isWhite })}>
                     {this.props.title}
                 </div>
-                <div className={cn(styles.text, isCenteredClass, isNoteClass)}>
+                <div className={cn(styles.text, isCenteredClass, isNoteClass, { [styles.none]: !this.props.text })}>
                     {this.props.text}
                 </div>
             </div>
