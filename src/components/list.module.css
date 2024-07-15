@@ -1,4 +1,9 @@
 .wrapper {
+
+    padding: var(--padding-top) var(--padding-lr);
+}
+
+.inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
@@ -36,7 +41,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper {
+    .inner {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 16px;
