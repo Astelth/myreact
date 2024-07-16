@@ -2,7 +2,7 @@
     background: url('../../public/images/svg/bg30d.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top 70px left 0px;
+    background-position: top 0px left 0px;
     width: 100%;
     padding: var(--padding-top) var(--padding-lr);
 }
@@ -73,7 +73,8 @@
     .item:last-child {
         flex-direction: row-reverse;
         width: 30%;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 24px;
     }
 
     .note {
