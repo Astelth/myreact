@@ -1,74 +1,74 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    color: #BBA390;
-    font-size: 22px;
-    line-height: 120%;
-    font-weight: 500;
-    font-family: "Futura PT", sans-serif;
-    text-transform: uppercase;
-    padding-top: 48px;
-    margin-bottom: 12px;
+  color: #BBA390;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 500;
+  font-family: "Futura PT", sans-serif;
+  text-transform: uppercase;
+  padding-top: 48px;
+  margin-bottom: 12px;
 }
 
 .text {
-    color: #91A4B8;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 20px;
-    margin-bottom: 32px;
+  color: #91A4B8;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 32px;
 }
 
 .note {
-    font-size: 14px;
-    line-height: 28px;
-    color: #5B82A9;
-    font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5B82A9;
+  font-weight: 400;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .grida {
-    grid-area: a;
+  grid-area: a;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .white {
-    color: #fff;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-    .title {
-        font-size: 46px;
-        text-align: left;
-        padding-top: 48px;
-        margin-bottom: 48px;
-    }
+  .title {
+    font-size: 46px;
+    text-align: left;
+    padding-top: 48px;
+    margin-bottom: 48px;
+  }
 
-    .text {
-        color: #8CAAC8;
-        font-size: 16px;
-        line-height: 32px;
-        text-align: left;
-        margin-bottom: 96px;
-    }
+  .text {
+    color: #8CAAC8;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 96px;
+  }
 
-    .note {
-        font-size: 20px;
-        line-height: 28px;
-        color: #5B82A9;
-        font-weight: 400;
-    }
+  .note {
+    font-size: 20px;
+    line-height: 28px;
+    color: #5B82A9;
+    font-weight: 400;
+  }
 
-    .centered {
-        text-align: center;
-    }
+  .centered {
+    text-align: center;
+  }
 }

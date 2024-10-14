@@ -21,7 +21,7 @@ class List extends React.Component {
             </div>
             <div className={styles.item}>
               {this.props.list.slice(0, 1).map((el) => (
-                <Item key={el.id} item={el} />
+                <Item key={el.id} item={el} isReversed />
               ))}
             </div>
             <div className={styles.items}>
@@ -31,7 +31,7 @@ class List extends React.Component {
             </div>
             <div className={styles.items}>
               {this.props.list.slice(qwe2 * -1).map((el) => (
-                <Item key={el.id} item={el} />
+                <Item key={el.id} item={el} isReversed />
               ))}
             </div>
           </div>

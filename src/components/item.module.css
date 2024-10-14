@@ -1,101 +1,91 @@
 .arrowIcon {
-    color: #2B8CFC;
-    margin-left: 16px;
+  color: #2B8CFC;
+  margin-left: 16px;
 }
 
 .item {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .itemHeader .content,
 .head {
-    display: none;
+  display: none;
 }
 
 .itemHeader .head {
-    display: block;
+  display: block;
 }
 
 .title {
-    color: #BBA390;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 10%;
-    font-family: "Futura PT", sans-serif;
-    text-align: center;
+  color: #BBA390;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 10%;
+  font-family: "Futura PT", sans-serif;
+  text-align: center;
 }
 
 .text {
-    color: #91A4B8;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 20px;
-    text-align: center;
+  color: #91A4B8;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle {
-    color: #fff;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 6%;
-    font-family: "Futura PT", sans-serif;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 6%;
+  font-family: "Futura PT", sans-serif;
+  text-transform: uppercase;
 }
 
 .image {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .content {
-        max-width: 485px;
-    }
+  .content {
+    max-width: 485px;
+  }
 
-    .head {
-        max-width: 520px;
-    }
+  .head {
+    max-width: 520px;
+  }
 
-    .item {
-        align-self: center;
-    }
+  .item {
+    align-self: center;
+  }
 
-    .item:nth-child(2) .content,
-    .item:nth-child(4) .content,
-    .item:nth-child(6) .content,
-    .item:nth-child(8) .content {
-        margin-left: auto;
-    }
+  .content_reverse {
+    flex-direction: column-reverse;
+  }
 
-    .item:nth-child(1) .content,
-    .item:nth-child(3) .content,
-    .item:nth-child(5) .content,
-    .item:nth-child(7) .content {
-        flex-direction: column-reverse;
-    }
+  .title {
+    font-size: 46px;
+    text-align: left;
+    padding-top: 48px;
+    margin-bottom: 48px;
+  }
 
-    .title {
-        font-size: 46px;
-        text-align: left;
-        padding-top: 48px;
-        margin-bottom: 48px;
-    }
+  .text {
+    color: #8CAAC8;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 96px;
+  }
 
-    .text {
-        color: #8CAAC8;
-        font-size: 16px;
-        line-height: 32px;
-        text-align: left;
-        margin-bottom: 96px;
-    }
-
-    .subtitle {
-        font-size: 24px;
-        line-height: 50px;
-        letter-spacing: 8%;
-    }
+  .subtitle {
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 8%;
+  }
 }
