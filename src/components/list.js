@@ -16,7 +16,7 @@ class List extends React.Component {
         <div className={styles.wrapper}>
           <div className={styles.inner}>
             <div className={styles.item}>
-              <Subhead title='ИНДИВИДУАЛЬНОЕ ИЗГОТОВЛЕНИЕ ШТОР' isCentered isGridA
+              <Subhead title='ИНДИВИДУАЛЬНОЕ ИЗГОТОВЛЕНИЕ ШТОР' is-Centered isGridA
                 text=' 8 видов систем, более 1000 видов тканей, и множество дополнительных возможностей позволяют создать реально уникальную и уютную атмосферу в вашем доме' />
             </div>
             <div className={styles.item}>

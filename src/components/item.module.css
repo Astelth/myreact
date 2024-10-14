@@ -60,10 +60,6 @@
     max-width: 520px;
   }
 
-  .item {
-    align-self: center;
-  }
-
   .content_reverse {
     flex-direction: column-reverse;
   }
