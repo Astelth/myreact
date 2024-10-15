@@ -1,42 +1,43 @@
-.wrapper {}
+.wrapper {
+  padding: var(--padding-top) var(--padding-lr);
+}
 
 .inner:nth-child(2) {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .inner:nth-child(2) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
+  .inner:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
 
-    .section {
-        width: calc(50% - 12px);
-        display: flex;
-    }
+  .section {
+    width: calc(50% - 12px);
+    display: flex;
+  }
 
-    .item {
-        background-color: #122E4A;
-        padding: 24px;
-    }
+  .sectionTop {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+  }
 
-    .section:nth-child(1) .item {
-        width: 230px;
-        height: 230px;
-        border-radius: 0px 30px 0px 30px;
-    }
+  .sectionBottom {
+    display: grid;
+    grid-template-columns: minmax(73px, 1fr) minmax(73px, 1fr) minmax(73px, 1fr);
+    gap: 14px;
+    margin-left: 133px;
+  }
 
-    .section:nth-child(2) .item {
-        width: 159px;
-        height: 159px;
-        border-radius: 30px 0px 30px 0;
-        margin-top: auto;
-    }
-
+  .itemBottom {
+    margin-top: auto;
+    vertical-align: bottom;
+  }
 }
