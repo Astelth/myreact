@@ -5,6 +5,7 @@ import React from 'react';
 import Cooperation from './components/cooperation';
 import Cards from './components/cards';
 import Block from './components/block';
+import Footer from './components/footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -108,6 +109,7 @@ class App extends React.Component {
           <Cooperation />
           <Cards />
           <Block />
+          <Footer />
         </div>
       </div>
     );
