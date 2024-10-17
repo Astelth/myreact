@@ -95,6 +95,18 @@ class Footer extends React.Component {
           ))}
           <Image image={logo} className={styles.logo} />
         </div>
+        <div className={cn(styles.section, { [styles.sectionB]: true })} >
+          {menu2.map((el) => (
+            <Link key={el.id} menuItem={el} />
+          ))}
+          <Image image={logo} className={styles.logo} />
+        </div>
+        <div className={cn(styles.section, { [styles.sectionC]: true })} >
+          {menu3.map((el) => (
+            <Link key={el.id} menuItem={el} />
+          ))}
+          <Image image={logo} className={styles.logo} />
+        </div>
       </div>
     )
   }
