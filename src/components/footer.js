@@ -90,20 +90,26 @@ class Footer extends React.Component {
     return (
       <div className={styles.wrapper}>
         <div className={cn(styles.section, { [styles.sectionA]: true })} >
-          {menu1.map((el) => (
-            <Link key={el.id} menuItem={el} />
-          ))}
+          <div className={cn(styles.list, { [styles.listA]: true })} >
+            {menu1.map((el) => (
+              <Link key={el.id} menuItem={el} />
+            ))}
+          </div>
           <Image image={logo} className={styles.logo} />
         </div>
         <div className={cn(styles.section, { [styles.sectionB]: true })} >
-          {menu2.map((el) => (
-            <Link key={el.id} menuItem={el} />
-          ))}
+          <div className={styles.list}>
+            {menu2.map((el) => (
+              <Link key={el.id} menuItem={el} />
+            ))}
+          </div>
         </div>
         <div className={cn(styles.section, { [styles.sectionC]: true })} >
-          {menu3.map((el) => (
-            <Link key={el.id} menuItem={el} />
-          ))}
+          <div className={styles.list}>
+            {menu3.map((el) => (
+              <Link key={el.id} menuItem={el} />
+            ))}
+          </div>
         </div>
       </div>
     )

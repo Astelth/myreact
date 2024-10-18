@@ -9,6 +9,9 @@
 }
 
 .sectionA {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 24px;
   background: rgba(42, 72, 107, 1);
 }
 
@@ -25,6 +28,12 @@
   max-height: 15px;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
 @media screen and (min-width:768px) {
   .wrapper {
     display: grid;
@@ -33,6 +42,15 @@
 
   .section {
     text-align: inherit;
+  }
+
+  .sectionA {
+    flex-direction: column;
+  }
+  .listA {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .logo {
