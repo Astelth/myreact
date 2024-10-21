@@ -10,7 +10,7 @@ class Link extends React.Component {
   render() {
     return (
       <div className={styles.item}>
-        <a href={this.item.link} className={cn(styles.link, { [styles.linkUnderlineless]: this.props.isUnderlineless })}>
+        <a href={this.item.link} className={cn(styles.link, { [styles.linkUnderlineless]: this.props.isUnderlineless }, { [styles.itemPhone]: this.props.isItemPhoneClass })}>
           {this.item.title}
         </a>
       </div>

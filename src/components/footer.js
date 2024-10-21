@@ -67,19 +67,31 @@ class Footer extends React.Component {
       id: 8,
       title: 'Политика ОПД',
       link: '#8',
-      section: 'Секция 2',
+      section: 'Секция 4',
     },
     {
       id: 9,
       title: 'Дизайн в Студии Вилкина',
       link: '#9',
-      section: 'Секция 2',
+      section: 'Секция 4',
     },
     {
       id: 10,
+      title: 'г. Севастополь, Фиолентовское шоссе 1/2',
+      link: '',
+      section: 'Секция 3',
+    },
+    {
+      id: 11,
       title: 'cortin@info',
       link: 'mailto:cortin@info.ru',
       section: 'Секция 3',
+    },
+    {
+      id: 12,
+      title: '+ 7 (800) 555-45-75',
+      link: 'tel:+78005554575',
+      section: 'Телефон',
     },
   ]
 
@@ -87,6 +99,8 @@ class Footer extends React.Component {
     const menu1 = this.menu.filter(item => item.section === 'Секция 1');
     const menu2 = this.menu.filter(item => item.section === 'Секция 2');
     const menu3 = this.menu.filter(item => item.section === 'Секция 3');
+    const menu4 = this.menu.filter(item => item.section === 'Секция 4');
+    const menu5 = this.menu.filter(item => item.section === 'Телефон');
     return (
       <div className={styles.wrapper}>
         <div className={cn(styles.section, { [styles.sectionA]: true })} >
@@ -106,7 +120,19 @@ class Footer extends React.Component {
         </div>
         <div className={cn(styles.section, { [styles.sectionC]: true })} >
           <div className={styles.list}>
+            <div className={styles.itemPhone}>
+              {menu5.map((el) => (
+                <Link key={el.id} menuItem={el} isItemPhoneClass isUnderlineless />
+              ))}
+            </div>
             {menu3.map((el) => (
+              <Link key={el.id} menuItem={el} />
+            ))}
+          </div>
+        </div>
+        <div className={cn(styles.section, { [styles.sectionD]: true })} >
+          <div className={styles.list}>
+            {menu4.map((el) => (
               <Link key={el.id} menuItem={el} />
             ))}
           </div>

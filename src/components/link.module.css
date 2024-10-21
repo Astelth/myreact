@@ -4,11 +4,18 @@
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 12px;
+  text-decoration: inherit;
   line-height: 14px;
 }
 
 .linkUnderlineless {
   text-decoration: none;
+}
+
+.itemPhone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @media screen and (min-width:768px) {
@@ -17,5 +24,14 @@
     text-decoration-color: rgba(67, 110, 153, 1);
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .linkUnderlineless {
+    text-decoration: none;
+  }
+
+  .itemPhone {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
