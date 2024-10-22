@@ -93,6 +93,30 @@ class Footer extends React.Component {
       link: 'tel:+78005554575',
       section: 'Телефон',
     },
+    {
+      id: 13,
+      title: <span class="icon-telegram"></span>,
+      link: '#13',
+      section: 'Иконки',
+    },
+    {
+      id: 14,
+      title: <span class="icon-vk"></span>,
+      link: '#14',
+      section: 'Иконки',
+    },
+    {
+      id: 15,
+      title: <span class="icon-facebook"></span>,
+      link: '#15',
+      section: 'Иконки',
+    },
+    {
+      id: 16,
+      title: <span class="icon-instagram"></span>,
+      link: '#16',
+      section: 'Иконки',
+    },
   ]
 
   render() {
@@ -101,6 +125,7 @@ class Footer extends React.Component {
     const menu3 = this.menu.filter(item => item.section === 'Секция 3');
     const menu4 = this.menu.filter(item => item.section === 'Секция 4');
     const menu5 = this.menu.filter(item => item.section === 'Телефон');
+    const menuIcons = this.menu.filter(item => item.section === 'Иконки');
     return (
       <div className={styles.wrapper}>
         <div className={cn(styles.section, { [styles.sectionA]: true })} >
@@ -127,6 +152,11 @@ class Footer extends React.Component {
             </div>
             {menu3.map((el) => (
               <Link key={el.id} menuItem={el} />
+            ))}
+          </div>
+          <div className={styles.listRow}>
+            {menuIcons.map((el) => (
+              <Link key={el.id} menuItem={el} isItemIconClass />
             ))}
           </div>
         </div>

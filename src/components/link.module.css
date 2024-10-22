@@ -6,6 +6,7 @@
   font-size: 12px;
   text-decoration: inherit;
   line-height: 14px;
+  transition: 0.3s;
 }
 
 .linkUnderlineless {
@@ -18,12 +19,23 @@
   line-height: 19px;
 }
 
+.itemIcon {
+  font-size: 16px;
+  text-decoration: none;
+}
+
 @media screen and (min-width:768px) {
   .link {
     text-decoration: underline;
     text-decoration-color: rgba(67, 110, 153, 1);
     font-size: 14px;
     line-height: 16px;
+
+    &:hover {
+      color: rgba(219, 16, 77, 0.5);
+      text-decoration-color: rgba(255, 255, 255, 0.9);
+      font-size: 15px;
+    }
   }
 
   .linkUnderlineless {
@@ -33,5 +45,10 @@
   .itemPhone {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .itemIcon {
+    font-size: 18px;
+    text-decoration: none;
   }
 }
