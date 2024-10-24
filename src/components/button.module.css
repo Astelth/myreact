@@ -7,6 +7,8 @@
   line-height: 30px;
   font-weight: 700;
   color: #fff;
+  display: flex;
+  gap: 8px;
 }
 
 .mobile100 {
@@ -16,7 +18,7 @@
 .centered {
   text-align: center;
 
-  .buttonStore {
+  * {
     margin: 0 auto;
   }
 }
@@ -86,9 +88,35 @@
   }
 }
 
+.icon {
+  font-family: 'icomoon' !important;
+  display: none;
+}
+
+.iconShare {
+  display: inherit;
+
+  &::before {
+    content: '\e900';
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .button {
+
+  .button,
+  .buttonStore {
     font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+      font-size: 21px;
+      background-color: #fff;
+      color: #2B8CFC;
+      border-radius: 8px;
+      border: 2px dottedsolid #2B8CFC;
+    }
   }
 
   .mobile100 {

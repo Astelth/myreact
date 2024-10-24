@@ -9,7 +9,7 @@ class Block extends React.Component {
       <div className={styles.wrapper}>
         <div className={styles.inner}>
           <Subhead title='КУПИТЬ НАШИ ИЗДЕЛИЯ МОЖНО' isCentered isWhite text='В магазинах нашей дилерской сети в вашем городе' />
-          <Button caption='Найти магазин' isCentered />
+          <Button caption='Найти магазин' isIconShare isCentered />
         </div>
         <div className={styles.inner}>
           <div className={styles.sectionTop}>
