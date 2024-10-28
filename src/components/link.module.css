@@ -34,7 +34,13 @@
     &:hover {
       color: rgba(219, 16, 77, 0.5);
       text-decoration-color: rgba(255, 255, 255, 0.9);
-      font-size: 15px;
+      display: inline-block;
+      transform: scale(1.1);
+
+      span {
+        display: inline-block;
+        transform: scale(1.25);
+      }
     }
   }
 

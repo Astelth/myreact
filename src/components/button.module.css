@@ -9,6 +9,10 @@
   color: #fff;
   display: flex;
   gap: 8px;
+
+  .icon {
+    font-weight: 300;
+  }
 }
 
 .mobile100 {
@@ -93,11 +97,19 @@
   display: none;
 }
 
-.iconShare {
+.iconShopping {
   display: inherit;
 
   &::before {
-    content: '\e900';
+    content: '\e921';
+  }
+}
+
+.iconDiscount {
+  display: inherit;
+
+  &::before {
+    content: '\e920';
   }
 }
 

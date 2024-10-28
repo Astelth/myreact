@@ -9,7 +9,7 @@ class Button extends React.Component {
         { [styles.storeClass]: this.props.isStore }, { [styles.big]: this.props.isBig }, { [styles.middle]: this.props.isMiddle },
       )}>
         <button className={cn(styles.button, { [styles.mobile100]: this.props.isMobile100 })}>
-          <span className={cn(styles.icon, { [styles.iconShare]: this.props.isIconShare })} ></span>
+          <span className={cn(styles.icon, { [styles.iconShopping]: this.props.isIconShopping }, { [styles.iconDiscount]: this.props.isIconDiscount })} ></span>
           <span>{this.props.caption}</span>
         </button>
         <button className={styles.buttonStore}>
